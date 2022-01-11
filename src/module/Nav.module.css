@@ -2,18 +2,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.Nav a {
+  text-decoration: none;
+}
+
 .Nav h2 {
-  color: red;
+  color: #a393fa;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+
+.Nav .sp {
+  margin-left: 39vw;
+}
+
+.Nav h3 {
+  color: #a393fa;
 }
 
 .Nav form {
@@ -22,6 +38,10 @@
 }
 
 .Nav input {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
   -webkit-transition: width 0.28s linear;
   transition: width 0.28s linear;
   outline: none;
@@ -33,6 +53,7 @@
 }
 
 .Nav input:focus {
-  width: 240px;
+  width: 200px;
+  background-image: none;
 }
 /*# sourceMappingURL=Nav.module.css.map */

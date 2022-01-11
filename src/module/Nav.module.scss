@@ -1,16 +1,33 @@
+$purple: #a393fa;
 .Nav {
   display: flex;
+  position: sticky;
   flex-direction: row;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   align-items: center;
+  a {
+    text-decoration: none;
+  }
   h2 {
-    color: red;
+    color: $purple;
+    margin-left: 3vw;
+    cursor: pointer;
+  }
+  .sp {
+    margin-left: 39vw;
+  }
+  h3 {
+    color: $purple;
   }
   form {
     margin-left: auto;
     margin-right: 3vw;
   }
   input {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
     transition: width 0.28s linear;
     outline: none;
     border: none;
@@ -20,6 +37,7 @@
     background-color: #dddddd;
   }
   input:focus {
-    width: 240px;
+    width: 200px;
+    background-image: none;
   }
 }
