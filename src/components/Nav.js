@@ -28,7 +28,7 @@ function Nav() {
       </Link>
 
       <div className={style.child}>
-        <Link to="/topRated" className="sp">
+        <Link to="/topRated">
           <h3>Top rated</h3>
         </Link>
         <Link to="/genres">
