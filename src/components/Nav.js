@@ -27,21 +27,23 @@ function Nav() {
         <h2>Movie World</h2>
       </Link>
 
-      <Link to="/topRated" className="sp">
-        <h3>Top rated</h3>
-      </Link>
-      <Link to="/genres">
-        <h3>Genres</h3>
-      </Link>
-      <form onSubmit={submit}>
-        <input
-          value={value}
-          placeholder={focus}
-          onChange={onchange}
-          onFocus={onfocus}
-          onBlur={onblur}
-        />
-      </form>
+      <div className={style.child}>
+        <Link to="/topRated" className="sp">
+          <h3>Top rated</h3>
+        </Link>
+        <Link to="/genres">
+          <h3>Genres</h3>
+        </Link>
+        <form onSubmit={submit}>
+          <input
+            value={value}
+            placeholder={focus}
+            onChange={onchange}
+            onFocus={onfocus}
+            onBlur={onblur}
+          />
+        </form>
+      </div>
     </div>
   );
 }
