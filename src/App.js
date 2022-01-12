@@ -1,15 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
+import TopRated from "./routes/TopRated";
+import Genres from "./routes/Genres";
+import Search from "./routes/Search";
+
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
-        <Route path="/search/:name" element={null} />
-        <Route path="/genres" element={null} />
-        <Route path="/topRated" element={null} />
+        <Route path="/search/:name" element={<Search />} />
+        <Route path="/genres" element={<Genres />} />
+        <Route path="/topRated" element={<TopRated />} />
       </Routes>
     </Router>
   );

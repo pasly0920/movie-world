@@ -13,10 +13,12 @@ $purple: #a393fa;
     color: $purple;
     margin-left: 3vw;
     cursor: pointer;
+    user-select: none;
   }
   h3 {
     color: $purple;
     margin-right: 3vw;
+    user-select: none;
   }
   h2:hover,
   h3:hover {

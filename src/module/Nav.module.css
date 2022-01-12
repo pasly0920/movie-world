@@ -25,11 +25,19 @@
   color: #a393fa;
   margin-left: 3vw;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .Nav h3 {
   color: #a393fa;
   margin-right: 3vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .Nav h2:hover,
