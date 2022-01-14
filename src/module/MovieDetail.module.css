@@ -1,0 +1,50 @@
+.baseBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.imgBox {
+  margin-top: 10vh;
+  width: 250px;
+  height: 375px;
+  margin-left: 13vw;
+}
+
+.thumb_img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.simpleDetail {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  line-height: 2;
+}
+
+.mainTitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.moreDetail {
+  margin-top: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 1.7;
+}
+
+.rightDetail {
+  margin-left: 3vw;
+}
+/*# sourceMappingURL=MovieDetail.module.css.map */

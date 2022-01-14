@@ -9,8 +9,7 @@ function Nav() {
 
   function submit(event) {
     event.preventDefault();
-    if (value.length > 0) console.log(value);
-    navigate(`/search/${value}`, { state: true });
+    if (value.length > 0) navigate(`/search/${value}`, { state: true });
   }
   function onfocus() {
     setFocus("  Search movie");
