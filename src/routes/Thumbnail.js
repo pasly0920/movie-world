@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import Nav from "../components/Nav";
 import style from "../module/Thumbnail.module.css";
 
 function Thumbnail() {
