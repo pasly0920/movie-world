@@ -40,6 +40,7 @@ function Home() {
           autoFocus={true}
           showStatus={false}
           showThumbs={false}
+          stopOnHover={false}
           width="100vw"
           onClickItem={(idx, id) => {
             navigate(`movie/${id.key}`);

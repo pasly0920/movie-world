@@ -28,39 +28,39 @@ function MovieDetail({ props }) {
         </span>
         <div className={style.moreDetail}>
           <div>
-            <span>개봉 </span>
+            <span className={style.spanKey}>개봉 </span>
             <span>
               {props.release_date.replace("-", ".").replace("-", ".")}
             </span>
             <br />
-            <span>장르 </span>
+            <span className={style.spanKey}>장르 </span>
             <span>
               {props.genres.map((item, idx) =>
                 idx !== props.genres.length - 1 ? item.name + "/" : item.name
               )}
             </span>
             <br />
-            <span>국가 </span>
+            <span className={style.spanKey}>국가 </span>
             <span>
               {new Intl.DisplayNames(["KO"], {
                 type: "region",
               }).of(props.production_countries[0].iso_3166_1)}
             </span>
             <br />
-            <span>러닝타임 </span>
+            <span className={style.spanKeyS}>러닝타임</span>
             <span>{props.runtime + "분"}</span>
             <br />
           </div>
           <div className={style.rightDetail}>
-            <span>평점 </span>
+            <span className={style.spanKey}>평점 </span>
             <span>
               {props.vote_average} {` (${props.vote_count})`}
             </span>
             <br />
-            <span>예산 </span>
+            <span className={style.spanKey}>예산 </span>
             <span>{getKoreanNumber(props.budget * 1200)}</span>
             <br />
-            <span>수익 </span>
+            <span className={style.spanKey}>수익 </span>
             <span>
               {getKoreanNumber(parseInt(props.revenue / 1000) * 1000 * 1200)}
             </span>
