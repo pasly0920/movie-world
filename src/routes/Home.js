@@ -42,7 +42,7 @@ function Home() {
           showThumbs={false}
           width="100vw"
           onClickItem={(idx, id) => {
-            navigate(`movie/${id.key}`, { state: true });
+            navigate(`movie/${id.key}`);
           }}
         >
           {movies.map((item, index) => (

@@ -4,6 +4,7 @@ import Detail from "./routes/Detail";
 import TopRated from "./routes/TopRated";
 import Genres from "./routes/Genres";
 import Search from "./routes/Search";
+import Thumbnail from "./routes/Thumbnail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/search/:name" element={<Search />} />
         <Route path="/genres" element={<Genres />} />
         <Route path="/topRated" element={<TopRated />} />
+        <Route path="/thumbnail/:poster_path" element={<Thumbnail />} />
       </Routes>
     </Router>
   );

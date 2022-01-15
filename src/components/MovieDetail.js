@@ -4,9 +4,7 @@ import style from "../module/MovieDetail.module.css";
 function MovieDetail({ props }) {
   const navigate = useNavigate();
   function onClick() {
-    navigate(`https://image.tmdb.org/t/p/original${props.poster_path}`, {
-      replace: true,
-    });
+    navigate(`/thumbnail${props.poster_path}`);
   }
   return (
     <div className={style.baseBox}>
@@ -69,6 +67,7 @@ function MovieDetail({ props }) {
             <br />
           </div>
         </div>
+        <span>{/*홈페이지 링크*/}</span>
       </div>
     </div>
   );
