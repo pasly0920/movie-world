@@ -40,3 +40,52 @@
   color: #969ca1;
   margin-right: 12.5px;
 }
+.homepage {
+  cursor: pointer;
+  font-weight: 700;
+}
+.homepageDiv {
+  margin-top: 20px;
+}
+.tabmenuWrapper {
+  border: 0;
+  border-bottom: 1px solid #d1d4d6;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+  margin-left: 13vw;
+  margin-right: 13vw;
+  height: 42px;
+  div {
+    font-size: 17.5px;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
+  }
+}
+
+.tabContent {
+  margin-top: 6vh;
+  margin-left: 13vw;
+  margin-right: 13vw;
+  margin-bottom: 5vh;
+  line-height: 26px;
+  img {
+    max-width: 254px;
+    max-height: 130px;
+  }
+}
+.on {
+  border-bottom: 2px solid black;
+}
+.hidden {
+  display: none;
+}
+.contentMake {
+  div {
+    justify-content: right;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+  }
+  font-size: 18px;
+}
