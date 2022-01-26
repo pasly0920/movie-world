@@ -126,7 +126,7 @@ function MovieDetail({ props }) {
                   }
                   alt=""
                 />
-                <span>
+                <span className={style.productionCompany}>
                   {item.name}
                   <br />
                 </span>
@@ -136,6 +136,7 @@ function MovieDetail({ props }) {
           <div className={num !== 2 ? style.hidden : null}>
             {
               <img
+                className={style.relatedImg}
                 src={
                   props.belongs_to_collection === null
                     ? null
@@ -147,11 +148,11 @@ function MovieDetail({ props }) {
             {props.belongs_to_collection === null ? (
               <span>None</span>
             ) : (
-              props.belongs_to_collection.name
+              <span className={style.productionCompany}>
+                {props.belongs_to_collection.name}
+              </span>
             )}
           </div>
-          {/* <div>{props.production_companies}</div> */}
-          {/* <div>{props.belongs_to_collection}</div> */}
         </div>
       </div>
     </div>

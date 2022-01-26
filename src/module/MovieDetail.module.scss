@@ -70,9 +70,20 @@
   margin-right: 13vw;
   margin-bottom: 5vh;
   line-height: 26px;
+  vertical-align: top;
   img {
     max-width: 254px;
     max-height: 130px;
+  }
+  .relatedImg {
+    max-width: 170px;
+    max-height: 260px;
+  }
+  .productionCompany {
+    margin-left: 30px;
+    vertical-align: top;
+    font-weight: 500;
+    user-select: none;
   }
 }
 .on {
