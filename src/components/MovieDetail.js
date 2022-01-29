@@ -61,11 +61,19 @@ function MovieDetail({ props }) {
               </span>
               <br />
               <span className={style.spanKey}>예산 </span>
-              <span>{getKoreanNumber(props.budget * 1200)}</span>
+              <span>
+                {props.budget === 0
+                  ? "-"
+                  : getKoreanNumber(props.budget * 1200)}
+              </span>
               <br />
               <span className={style.spanKey}>수익 </span>
               <span>
-                {getKoreanNumber(parseInt(props.revenue / 1000) * 1000 * 1200)}
+                {props.revenue === 0
+                  ? "-"
+                  : getKoreanNumber(
+                      parseInt(props.revenue / 1000) * 1000 * 1200
+                    )}
               </span>
               <br />
             </div>
