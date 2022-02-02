@@ -14,7 +14,11 @@ function MovieDetail({ props }) {
         <div className={style.imgBox}>
           <img
             className={style.thumb_img}
-            src={`https://image.tmdb.org/t/p/original${props.poster_path}`}
+            src={
+              props.poster_path !== null
+                ? `https://image.tmdb.org/t/p/original${props.poster_path}`
+                : "https://t1.daumcdn.net/movie/movie2020/pc/ico_noimage.png"
+            }
             alt=""
             onClick={onClick}
           />
@@ -33,21 +37,29 @@ function MovieDetail({ props }) {
             <div>
               <span className={style.spanKey}>개봉 </span>
               <span>
-                {props.release_date.replace("-", ".").replace("-", ".")}
+                {props.release_date.length !== 0
+                  ? props.release_date.replace("-", ".").replace("-", ".")
+                  : "-"}
               </span>
               <br />
               <span className={style.spanKey}>장르 </span>
               <span>
-                {props.genres.map((item, idx) =>
-                  idx !== props.genres.length - 1 ? item.name + "/" : item.name
-                )}
+                {props.genres.length !== 0
+                  ? props.genres.map((item, idx) =>
+                      idx !== props.genres.length - 1
+                        ? item.name + "/"
+                        : item.name
+                    )
+                  : "-"}
               </span>
               <br />
               <span className={style.spanKey}>국가 </span>
               <span>
-                {new Intl.DisplayNames(["KO"], {
-                  type: "region",
-                }).of(props.production_countries[0].iso_3166_1)}
+                {props.production_countries.length !== 0
+                  ? new Intl.DisplayNames(["KO"], {
+                      type: "region",
+                    }).of(props.production_countries[0].iso_3166_1)
+                  : "-"}
               </span>
               <br />
               <span className={style.spanKeyS}>러닝타임</span>
