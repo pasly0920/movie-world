@@ -1,5 +1,4 @@
 .keywordContainer {
-  margin-left: 100px;
   text-align: left;
   vertical-align: middle;
   margin-top: 30px;
@@ -8,12 +7,16 @@
     font-weight: 600;
   }
 }
-
+.mainContent {
+  width: 1120px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
 .movieList {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 100px;
   flex-direction: column;
   overflow: auto;
 }
