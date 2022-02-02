@@ -1,0 +1,50 @@
+.keywordContainer {
+  margin-left: 100px;
+  text-align: left;
+  vertical-align: middle;
+  margin-top: 30px;
+  .searchKeyword {
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.movieList {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  flex-direction: column;
+  overflow: auto;
+}
+.movie {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  .imgContainer {
+    cursor: pointer;
+    img {
+      border-radius: 10px;
+      width: 140px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  .textContainer {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .originalTitle {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .key {
+      color: #98989c;
+    }
+  }
+}
